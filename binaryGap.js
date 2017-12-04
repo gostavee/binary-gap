@@ -1,8 +1,8 @@
-function solution(num) {
-    var bin = num.toString(2);
-    var maxGap = 0;
-    var currentMax = 0;
-    for(var i = 0; i < bin.length; i++) {
+const solution = (num) => {
+    const bin = num.toString(2);
+    let maxGap = 0;
+    let currentMax = 0;
+    for(let i = 0; i < bin.length; i++) {
         if(bin[i] === "0") {
             currentMax++
         } else {
